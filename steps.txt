@@ -1,0 +1,39 @@
+Initialize Git Locally in Your Project Folder
+git init
+
+Add and Commit Your Project Files
+git add .
+git commit -m "Initial commit for <your-project-name>"
+
+Link Your Local Repository to GitHub
+https://github.com/your-username/your-repo-name.git
+git remote add origin https://github.com/your-username/your-repo-name.git
+
+Push Your Code to GitHub
+git branch -M main
+git push -u origin main
+
+If Remote Repo Already Has Some Files
+git pull origin main --allow-unrelated-histories
+git add .
+git commit -m "Resolved merge conflicts"
+git push -u origin main
+
+
+
+# Initialize Git in your project folder
+git init
+
+# Stage all files
+git add .
+
+# Commit the changes
+git commit -m "Initial commit"
+
+# Add remote (GitHub URL)
+git remote add origin https://github.com/your-username/your-repo-name.git
+
+# Rename to 'main' and push the code
+git branch -M main
+git push -u origin main
+
